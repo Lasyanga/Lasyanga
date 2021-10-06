@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Portfolio Herminigildo Jr">
+	<meta name="keywords" content="Herminigildo Jr, Java, Projects, Portfolio, Profile, Lasyanga">
+	<meta name="author" content="Lasyanga-Herminigildo Jr Quiano">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio|Herminigildo Jr</title>
 
@@ -15,12 +18,15 @@
     <div 
 		class="w3-sidebar w3-bar-block w3-collapsew3-card w3-animate-left w3-margin-top w3-padding-24 w3-theme-l3 w3-greyscale-min" 
 		style="width:250px;" id="mySidebar">
-		
+
         <button class="w3-bar-item w3-button w3-large w3-hide-large w3-right-align" onclick="w3_close()">&times;</button>		
-        <a href="#home" class="w3-bar-item w3-button w3-center">Home</a>
-		<a href="#about" class="w3-bar-item w3-button w3-center">About Me</a>
-        <a href="#" class="w3-bar-item w3-button w3-center">Education</a>
-        <a href="#works" class="w3-bar-item w3-button w3-center">Projects/Works</a>
+        <div class="w3-panel w3-auto">
+			<a href="#home" class="w3-bar-item w3-button w3-margin-top w3-center">Home</a>
+			<a href="#about" class="w3-bar-item w3-button w3-margin-top w3-center">About Me</a>
+			<a href="#" class="w3-bar-item w3-button w3-margin-top w3-center">Education</a>
+			<a href="#works" class="w3-bar-item w3-button w3-margin-top w3-center">Projects/Works</a>
+			<a href="#contact" class="w3-bar-item w3-button w3-margin-top w3-center">Contact Me</a>
+		</div>
     </div>
       
 	<div class="w3-main" style="margin-left:250px">		
@@ -46,16 +52,16 @@
 						class="w3-circle"/>
 
 					<h2>Herminigildo Jr Quaino</h2>
-
-					<div class="w3-panel" style="font-size:20px;">
-						<a href="#" ><i class="bx bxl-linkedin"></i></a>
-						<a href="https://github.com/Lasyanga" title="github.com"><i class="bx bxl-github"></i></a>
-						<a href="#"><i class='bx bxl-facebook' ></i></a>
+					<div class="w3-panel">
+						BS Information Technology<br />
+						Aspiring Developer
 					</div>
 
-					<button class="w3-round w3-btn w3-circle w3-blue w3-margin-bottom">
-						Download Resume
-					</button>					
+					<div class="w3-panel w3-xlarge">
+						<a href="#" ><i class="bx bxl-linkedin"></i></a>
+						<a href="https://github.com/Lasyanga" title="github.com"><i class="bx bxl-github"></i></a>
+						<a href="https://web.facebook.com/profile.php?id=100005793018373"><i class='bx bxl-facebook' ></i></a>
+					</div>				
 				</header>
 
 				<span id="about"></span>
@@ -71,14 +77,49 @@
 							Technologies
 						</h5>
 						<div class="w3-panel">
-							Java
 							
+							<button class="w3-btn w3-round-xxlarge w3-blue w3-margin-bottom">
+								<span class="bx bxl-html5"></span>HTML
+							</button>
+							<div class="w3-light-grey w3-round-xxlarge w3-margin-bottom">
+								<div class="w3-container w3-aqua w3-center w3-round-xxlarge" style="width:25%">25%</div>
+							</div>  
+							<button class="w3-btn w3-round-xxlarge w3-blue w3-margin-bottom">
+								<span class="bx bxl-css3"></span>CSS
+							</button>
+							<div class="w3-light-grey w3-round-xxlarge w3-margin-bottom">
+								<div class="w3-container w3-aqua w3-center w3-round-xxlarge" style="width:25%">25%</div>
+							</div> 
+							<button class="w3-btn w3-round-xxlarge w3-blue w3-margin-bottom">
+								<span class="bx bxl-php"></span>PHP
+							</button>
+							<div class="w3-light-grey w3-round-xxlarge w3-margin-bottom">
+								<div class="w3-container w3-aqua w3-center w3-round-xxlarge" style="width:50%">50%</div>
+							</div> 
+							<button class="w3-btn w3-round-xxlarge w3-blue w3-margin-bottom">
+								Java
+							</button>
+							<div class="w3-light-grey w3-round-xlarge w3-margin-bottom">
+								<div class="w3-container w3-aqua w3-center w3-round-xlarge" style="width:20%">20%</div>
+							</div>
+							<button class="w3-btn w3-round-xxlarge w3-blue w3-margin-bottom">
+								<span class="bx bxl-php"></span>MySQL
+							</button>
+							<div class="w3-light-grey w3-round-xxlarge w3-margin-bottom">
+								<div class="w3-container w3-aqua w3-center w3-round-xxlarge" style="width:25%">25%</div>
+							</div> 
+							<button class="w3-btn w3-round-xxlarge w3-blue w3-margin-bottom">
+								<span class="bx bxl-php"></span>Git
+							</button>
+							<div class="w3-light-grey w3-round-xxlarge w3-margin-bottom">
+								<div class="w3-container w3-aqua w3-center w3-round-xxlarge" style="width:25%">25%</div>
+							</div> 
 						</div>
 					</div>
 					<!-- end About section -->
 
-					<!-- Education section -->
-					<div class="w3-container w3-padding 32" id="works">
+					<!-- Projects section -->
+					<div class="w3-container w3-padding-32" id="works">
 						<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-wide w3-center">
 							Projects/Works
 						</h3>
@@ -92,14 +133,35 @@
 						</div>
 
 					</div>
-					<!-- end Education section -->
+					<!-- end Projects section -->
+
+					<!-- Contact section-->
+					<div class="w3-container w3-padding-32">
+						<h3 class="w3-border-bottom w3-center w3-border-light-grey w3-padding-16 w3-wide" id="contact">
+							Contact Me
+						</h3>
+						<div class="w3-center w3-panel">
+							<p>Please Contact Me with the Following Social Media</p>
+							<div class="w3-panel w3-xxlarge">
+								<a href="http://"><span class="bx bxl-linkedin"></span></a>
+								<a href="http://"><span class="bx bxl-github bx-lg"></span></a>
+								<a href="http://"><span class="bx bxl-facebook-circle"></span></a>
+								<a href="http://"><span class="bx bxl-google"></span></a>
+							</div>
+						</div>
+						
+					</div>
+					<!-- end Contact section-->
 				</div>
 			</div>						
 		</div>		
 	</div>
 
-	<footer class="w3-container w3-theme-l3 w3-wide w3-text-sand w3-padding-16 w3-center">
-		footer
+	<footer class="w3-container w3-theme-l3 w3-padding-16 w3-center">
+		<div class="w3-panel">
+			Copyright 2021<span class="bx bxs-copyright"></span><br />
+			<span class="w3-right w3-tiny">Powered by: <a>W3 CSS</a></span>
+		</div>
 	</footer>
 
 	<script src="js/w3.js"></script>
