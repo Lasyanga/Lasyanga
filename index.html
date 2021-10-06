@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio|Herminigildo Jr</title>
+
+    <link rel="stylesheet" href="css/w3pro.css" />
+    <link rel="stylesheet" href="css/w3colors.css">
+    <link rel="stylesheet" href="css/w3-theme-dark-grey.css" />
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="w3-theme-l3">
+    <div 
+		class="w3-sidebar w3-bar-block w3-collapsew3-card w3-animate-left w3-margin-top w3-padding-24 w3-theme-l3 w3-greyscale-min" 
+		style="width:250px;" id="mySidebar">
+		
+        <button class="w3-bar-item w3-button w3-large w3-hide-large w3-right-align" onclick="w3_close()">&times;</button>		
+        <a href="#home" class="w3-bar-item w3-button w3-center">Home</a>
+		<a href="#about" class="w3-bar-item w3-button w3-center">About Me</a>
+        <a href="#" class="w3-bar-item w3-button w3-center">Education</a>
+        <a href="#works" class="w3-bar-item w3-button w3-center">Projects/Works</a>
+    </div>
+      
+	<div class="w3-main" style="margin-left:250px">		
+		<div class="w3-theme-dark w3-top">
+			<button class="w3-button w3-large w3-hide-large" onclick="w3_open()">&#9776;</button>	
+			<img 
+				src="img/profile_mo.jpg" 
+				style="width: 40px; " 
+				alt="Herminigildo's Profile" 
+				title="Herminigildo Jr Quiano" 
+				class="w3-circle w3-hide-large w3-right w3-margin-right"/>
+			<span class="w3-right w3-padding w3-opacity-max w3-hide-large">Herminigildo Jr</span>	
+		</div>
+
+		<div class="w3-container" id="home">
+			<header class="w3-display-container w3-content w3-padding-64 w3-section">
+				<div class="w3-container w3-center">
+					<img 
+						src="img/profile_mo.jpg" 
+						style="width: 200px; " 
+						alt="Herminigildo's Profile" 
+						title="Herminigildo Jr Quiano" 
+						class="w3-circle"/>
+
+					<h2>Herminigildo Jr Quaino</h2>
+
+					<div class="w3-panel" style="font-size:20px;">
+						<a href="#" ><i class="bx bxl-linkedin"></i></a>
+						<a href="https://github.com/Lasyanga" title="github.com"><i class="bx bxl-github"></i></a>
+						<a href="#"><i class='bx bxl-facebook' ></i></a>
+					</div>
+
+					<button class="w3-round w3-btn w3-circle w3-blue w3-margin-bottom">
+						Download Resume
+					</button>					
+				</header>
+
+				<span id="about"></span>
+				<div class="w3-content w3-padding-64 w3-section">
+					<!-- About section -->
+					<div class="w3-container">
+						<h3 class="w3-border-bottom w3-border-light-grey w3-center w3-wide">
+							About me
+						</h3>
+						<p class="w3-justify w3-serif">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique alias ipsa corporis minima voluptates fuga explicabo aspernatur, delectus, optio quaerat excepturi, provident odio asperiores sed pariatur harum omnis placeat repellat?</p>
+						
+						<h5 class="w3-border-bottom w3-border-light-grey w3-center w3-wide">
+							Technologies
+						</h5>
+						<div class="w3-panel">
+							Java
+							
+						</div>
+					</div>
+					<!-- end About section -->
+
+					<!-- Education section -->
+					<div class="w3-container w3-padding 32" id="works">
+						<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-wide w3-center">
+							Projects/Works
+						</h3>
+						<div class="w3-row-padding">
+							<div class="w3-col l3 m6 w3-margin-bottom">
+								<div class="w3-display-container">
+									<div class="w3-display-topleft w3-teal">Simple calculator</div>
+									<img src="img/profile_mo.jpg" alt="" style="width: 100%"> 
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<!-- end Education section -->
+				</div>
+			</div>						
+		</div>		
+	</div>
+
+	<footer class="w3-container w3-theme-l3 w3-wide w3-text-sand w3-padding-16 w3-center">
+		footer
+	</footer>
+
+	<script src="js/w3.js"></script>
+	<script src="js/custom.js"></script>
+      
+</body>
+</html>
