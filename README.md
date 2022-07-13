@@ -1,10 +1,8 @@
-﻿# Herminigildo Jr (Lasyanga) 
-
-<div align="center">
+﻿<div align="center">
 
 ![Course](https://img.shields.io/badge/Bacherlor's%20Degree-Information%20Technology-lightgrey?style=for-the-badge&logo=google%20scholar&logoColor=white)
 
-[![Facebook](https://img.shields.io/badge/Lasyanga-blue?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Lasyanga)
+[![Facebook](https://img.shields.io/badge/facebook-blue?style=flat-square&logo=facebook&logoColor=white)](https://www.facebook.com/Lasyanga) [![Linkedin](https://img.shields.io/badge/Linkedin-blue?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/herminigildo-jr-quiano-1755421bb/) [![Indeed](https://img.shields.io/badge/Indeed-blue?style=flat-square&logo=indeed&logoColor=white)](https://my.indeed.com/p/herminigildoj-60p7b2g)
 
 ![Profile view](https://komarev.com/ghpvc/?username=Lasyanga&style=flat&color=blue)
 
