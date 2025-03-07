@@ -26,7 +26,7 @@ I am a dedicated software developer with a passion for crafting efficient and sc
 ![GitHub stats](https://github-readme-stats.vercel.app/api?username=Lasyanga&show_icons=true&theme=radical)
 
 ## 📫 Connect with Me
-- 📧 Email: herminigildojrquiano@gmail.com
+- 📧 [Email](herminigildojrquiano@gmail.com)
 - 🌎 [LinkedIn](www.linkedin.com/in/herminigildo-jr-quiano-1755421bb)
 - 🌎 [My Portfolio](https://lasyanga-porfolio.netlify.app/)
 
