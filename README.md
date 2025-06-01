@@ -4,7 +4,7 @@
 I am a dedicated software developer with a passion for crafting efficient and scalable solutions. My expertise lies in problem-solving, and optimizing algorithms.
 
 - 💻 Software developer with a strong focus on performance and code quality.
-- 🧠 Committed to continuous learning and personal growth, drawing inspiration from my alter ego **Gil**, a symbol of confidence and resilience.
+- 🧠 Committed to continuous learning and personal growth.
 
 ## 🔧 Technologies & Tools
 ![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white)
