@@ -124,3 +124,47 @@
    left: 0%;
    }
  }
+
+
+/* .w3-top is position:fixed, so an anchor jump lands underneath it */
+@media (max-width:992px) {
+  #about, #experience, #skills, #works, #contact {
+     scroll-margin-top: 48px;
+  }
+ }
+
+/* Experience section list */
+.exp-list {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+
+.exp-list li {
+   padding: 6px 0 6px 20px;
+   position: relative;
+ }
+
+.exp-list li::before {
+   content: "\25B8";
+   position: absolute;
+   left: 0;
+   color: #5AD4B8;
+ }
+
+/* Long address must wrap on narrow viewports instead of being clipped */
+a[href^="mailto:"] {
+   white-space: normal;
+   overflow-wrap: anywhere;
+ }
+
+/* Grouped skill tags, replacing the percentage bars */
+.skill-tag {
+   display: inline-block;
+   padding: 4px 10px;
+   margin: 0 6px 6px 0;
+   border: 1px solid rgba(255,255,255,0.2);
+   border-radius: 6px;
+   background-color: rgba(255,255,255,0.08);
+   font-size: 0.9rem;
+ }
