@@ -12,7 +12,8 @@ deployed artifact. Live at https://lasyanga.github.io/Lasyanga/ (GitHub Pages, r
     css/custom.css    the only site-authored stylesheet: the disabled timeline rules, an anchor
                       offset media query, .exp-list, .skill-tag, and an a[href^="mailto:"] wrap rule
     css/w3*.css       vendored W3.CSS — third-party, do not hand-edit
-    js/custom.js      the only site-authored JS (w3_open / w3_close sidebar toggle)
+    js/custom.js      the only site-authored JS: w3_open / w3_close, plus a DOMContentLoaded
+                      handler that auto-closes the sidebar on a nav tap below 993px
     js/w3.js, js/jquery-3.6.0.min.js    vendored third-party — do not hand-edit
     img/              all images, referenced as relative img/<name>
     my-cv/            the CV, served at my-cv/Herminigildo-Quiano-CV.pdf and linked by the hero
