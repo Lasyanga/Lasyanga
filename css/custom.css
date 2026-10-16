@@ -168,3 +168,12 @@ a[href^="mailto:"] {
    background-color: rgba(255,255,255,0.08);
    font-size: 0.9rem;
  }
+
+/* Hero CTAs. Inline-block buttons lose their separating whitespace when the row
+   wraps, so the stacked case collapsed to zero gap. Flex makes it consistent. */
+.cta-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 16px;
+ }
