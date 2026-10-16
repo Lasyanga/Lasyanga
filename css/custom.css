@@ -177,3 +177,12 @@ a[href^="mailto:"] {
    justify-content: center;
    gap: 16px;
  }
+
+
+/* Anchor jumps animate. Scoped to no-preference so readers who have asked for
+   reduced motion keep the instant jump instead. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+ }
