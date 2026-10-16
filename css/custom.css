@@ -185,4 +185,40 @@ a[href^="mailto:"] {
   html {
     scroll-behavior: smooth;
   }
- }
+}
+
+/* Skip to content link — visually hidden until focused */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #004740;
+  color: #ffffff;
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* .w3-top is position:fixed with width:100% and no left, so it takes its static
+   position from .w3-main (margin-left:250px) and overhangs the right edge by
+   250px at desktop widths. Below 993px W3.CSS zeroes that margin, so the bar is
+   already flush left and must not be offset. Scoping both rules to the desktop
+   breakpoint keeps the mobile header at the left edge. */
+@media (min-width: 993px) {
+  .w3-top {
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
+/* Project card images are pinned to a 200px-tall box whose width follows the grid
+   column, so the box aspect shifts with the viewport and no fixed image aspect can
+   match it. `contain` shows the whole screenshot undistorted instead of stretching
+   it to fill; the background matches w3-theme-d3 so the letterboxing disappears. */
+#works .w3-display-container img {
+  object-fit: contain;
+  background-color: #424242;
+}
