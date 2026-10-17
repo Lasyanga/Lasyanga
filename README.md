@@ -1,33 +1,67 @@
-# Hello, I'm Lasyanga 👋
+# Hi, I'm Herminigildo Jr A. Quiano 👋
 
-## 🚀 About Me
-I am a dedicated software developer with a passion for crafting efficient and scalable solutions. My expertise lies in problem-solving, and optimizing algorithms.
+**PHP developer with a QA mindset.** I build and maintain enterprise HR, payroll, and timekeeping
+systems — the kind of software where a small error eventually turns up in someone's paycheck.
 
-- 💻 Software developer with a strong focus on performance and code quality.
-- 🧠 Committed to continuous learning and personal growth.
+I'm a PHP / Systems Developer at **LSTV Inc.** in Valenzuela City, Philippines. Day to day I work on a
+multi-company suite — HRIS, Payroll, Timekeeping, and Employee Self-Service — running on multi-tenant
+MySQL and MariaDB databases. A large part of that is root-cause analysis and edge-case validation,
+which is why testing and defect discipline are the parts of the work I care most about.
 
-## 🔧 Technologies & Tools
-![Java](https://img.shields.io/badge/-Java-007396?style=for-the-badge&logo=java&logoColor=white)
+## What I'm working on
+
+- 🧪 **Automated testing** — building out PHPUnit unit tests and smoke tests for a legacy codebase
+- 🏗️ **Refactoring** — breaking procedural scripts into service-layer modules that can be tested
+- 🌐 **Modern JavaScript** — moving legacy front-end scripts toward structured standards
+
+## Tech I work with
+
+![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-003B57?style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
-![PHP](https://img.shields.io/badge/-PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![PowerShell](https://img.shields.io/badge/-PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![Node.js](https://img.shields.io/badge/-Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![jQuery](https://img.shields.io/badge/-jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&logo=css&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![PowerShell](https://img.shields.io/badge/-PowerShell-5391FE?style=for-the-badge)
 
-## 📌 Featured Projects
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=Lasyanga&repo=Number-System-Conversion-java&theme=radical)](https://github.com/Lasyanga/your-repo-name)
+Also PDO, AJAX, TCPDF, and PHPMailer — plus some C#, TypeScript, and Node.js tooling picked up from
+legacy analysis and porting work. The side projects below are built with React.
+
+## Personal projects
+
+- **[Sorting & Searching Algorithms](https://github.com/Lasyanga/Simple-program-java)** — a small Java
+  program that steps through the classic sorting and searching routines.
+- **[Sentiment Analyzer](https://lasyanga.github.io/sentiment-analyzer/)** — a web app that reads a
+  block of text, scores its sentiment, and charts the breakdown.
+- **[A poetry compilation](https://lasyanga.github.io/Tula/)** — a set of Filipino poems, laid out to
+  be read on a screen.
+
+## GitHub at a glance
 
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Lasyanga&layout=compact&theme=radical)](https://github.com/Lasyanga)
 
-## 📈 GitHub Statistics
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=Lasyanga&show_icons=true&theme=radical)
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=Lasyanga&show_icons=true&theme=radical)](https://github.com/Lasyanga)
 
-## 📫 Connect with Me
-- 📧 [Email](herminigildojrquiano@gmail.com)
-- 🌎 [LinkedIn](www.linkedin.com/in/herminigildo-jr-quiano-1755421bb)
-- 🌎 [My Portfolio](https://lasyanga-porfolio.netlify.app/)
+## Portfolio
+
+The full picture — experience, skills, and everything above — is at
+**[lasyanga.github.io/Lasyanga](https://lasyanga.github.io/Lasyanga/)**. The
+[PDF version of my CV](https://lasyanga.github.io/Lasyanga/my-cv/Herminigildo-Quiano-CV.pdf) is there too.
+
+## Get in touch
+
+- 📧 [herminigildojrquiano@gmail.com](mailto:herminigildojrquiano@gmail.com)
+- 🐙 [github.com/Lasyanga](https://github.com/Lasyanga)
+- 📘 [facebook.com/Lasyanga](https://www.facebook.com/Lasyanga)
+
+Email is the fastest way to reach me — I usually reply within a day or two.
+
+---
 
 _"Time is a valuable resource—leveraging it effectively leads to success."_ ⏱️
+
+<sub>This repository is the portfolio site itself: a hand-written static page with no build step.
+Serve the root with <code>python -m http.server 8000</code> and open <code>http://localhost:8000/</code>.</sub>
