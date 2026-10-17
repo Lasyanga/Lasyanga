@@ -1,16 +1,16 @@
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("mySidebar").style.setProperty("display", "block", "important");
 }
 
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("mySidebar").style.setProperty("display", "none", "important");
 }
 
-// Below 993px the sidebar covers the page, so a nav tap must dismiss it or the
-// reader is left tapping the x. At 993px and up it is permanent and stays put.
+// Below 1200px the sidebar covers the page, so a nav tap must dismiss it or the
+// reader is left tapping the x. At 1200px and up it is permanent and stays put.
 document.addEventListener("DOMContentLoaded", function () {
   var sidebar = document.getElementById("mySidebar");
-  var collapsed = window.matchMedia("(max-width: 992px)");
+  var collapsed = window.matchMedia("(max-width: 1199px)");
 
   var links = sidebar.querySelectorAll('a[href^="#"]');
   for (var i = 0; i < links.length; i++) {

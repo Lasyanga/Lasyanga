@@ -88,8 +88,8 @@ network access.
 - The hero and Contact each link GitHub and Facebook only. There is deliberately no LinkedIn —
   it was removed from both the site and the CV, and a link checker will not flag its absence.
 - `.w3-top` is `position:fixed; width:100%`. `custom.css` pins it with `left:250px` and
-  `width:calc(100% - 250px)` **inside a `@media (min-width:993px)` block, and that scoping is
-  load-bearing.** Below 993px W3.CSS zeroes `.w3-main`'s inline `margin-left` with `!important`,
+  `width:calc(100% - 250px)` **inside a `@media (min-width:1200px)` block, and that scoping is
+  load-bearing.** Below 1200px W3.CSS zeroes `.w3-main`'s inline `margin-left` with `!important`,
   but it does not override `left` — so an unscoped `left:250px` pushes the whole mobile header
   250px right, hiding the profile thumbnail and name and shifting the hamburger off the edge.
   The `w3-collapse` breakpoint and this one must stay in step.
