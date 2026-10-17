@@ -124,3 +124,110 @@
    left: 0%;
    }
  }
+
+
+/* .w3-top is position:fixed, so an anchor jump lands underneath it */
+@media (max-width: 1199px) {
+  #about, #experience, #skills, #works, #contact {
+     scroll-margin-top: 48px;
+  }
+ }
+
+/* Experience section list */
+.exp-list {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+ }
+
+.exp-list li {
+   padding: 6px 0 6px 20px;
+   position: relative;
+ }
+
+.exp-list li::before {
+   content: "\25B8";
+   position: absolute;
+   left: 0;
+   color: #5AD4B8;
+ }
+
+/* Long address must wrap on narrow viewports instead of being clipped */
+a[href^="mailto:"] {
+   white-space: normal;
+   overflow-wrap: anywhere;
+ }
+
+/* Grouped skill tags, replacing the percentage bars */
+.skill-tag {
+   display: inline-block;
+   padding: 4px 10px;
+   margin: 0 6px 6px 0;
+   border: 1px solid rgba(255,255,255,0.2);
+   border-radius: 6px;
+   background-color: rgba(255,255,255,0.08);
+   font-size: 0.9rem;
+ }
+
+/* Hero CTAs. Inline-block buttons lose their separating whitespace when the row
+   wraps, so the stacked case collapsed to zero gap. Flex makes it consistent. */
+.cta-row {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 16px;
+ }
+
+
+/* Anchor jumps animate. Scoped to no-preference so readers who have asked for
+   reduced motion keep the instant jump instead. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Skip to content link — visually hidden until focused */
+.skip-link {
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #004740;
+  color: #ffffff;
+  padding: 8px 16px;
+  z-index: 1000;
+  transition: top 0.2s;
+}
+.skip-link:focus {
+  top: 0;
+}
+
+/* Raise the sidebar collapse breakpoint from 993px to 1200px so portrait
+   monitors (e.g. 1080px wide) get the hamburger + overlay sidebar.
+   Below 1200px the sidebar hides, the hamburger shows, and .w3-main's
+   margin is zeroed. Above 1200px the sidebar is permanent and the top bar
+   is offset past it. */
+@media (max-width: 1199px) {
+  .w3-sidebar.w3-collapse { display: none !important; }
+  .w3-main { margin-left: 0 !important; margin-right: 0 !important; }
+  .w3-hide-large { display: inline-block !important; }
+  .w3-top { left: 0; width: 100%; }
+}
+
+@media (min-width: 1200px) {
+  .w3-sidebar.w3-collapse { display: block !important; }
+  .w3-hide-large { display: none !important; }
+  .w3-top {
+    left: 250px;
+    width: calc(100% - 250px);
+  }
+}
+
+/* Project card images are pinned to a 200px-tall box whose width follows the grid
+   column, so the box aspect shifts with the viewport and no fixed image aspect can
+   match it. `contain` shows the whole screenshot undistorted instead of stretching
+   it to fill; the background matches w3-theme-d3 so the letterboxing disappears. */
+#works .w3-display-container img {
+  object-fit: contain;
+  background-color: #424242;
+}

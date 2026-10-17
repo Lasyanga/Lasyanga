@@ -7,6 +7,7 @@
 	<meta name="keywords" content="Herminigildo Jr, Java, Projects, Portfolio, Profile, Lasyanga">
 	<meta name="author" content="Lasyanga-Herminigildo Jr Quiano">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#212121">
 	<link loading="lazy" rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
 	<title>Portfolio|Herminigildo Jr</title>
 
@@ -17,15 +18,17 @@
 	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="w3-theme-d3">
+	<a href="#home" class="skip-link">Skip to content</a>
+
     <div 
 		class="w3-sidebar 
 			w3-bar-block 
-			w3-collapsew3-card 
+			w3-collapse 
 			w3-animate-left 
 			w3-margin-top 
 			w3-padding-24 
 			w3-theme-d3 
-			w3-opacit-off 
+			w3-opacity-off 
 			w3-grayscale" 
 		style="width:250px;" 
 		id="mySidebar">
@@ -47,13 +50,17 @@
 				class="w3-bar-item w3-button w3-margin-top w3-center">
 				About Me
 			</a>
+			<a href="#experience" 
+				class="w3-bar-item w3-button w3-margin-top w3-center">
+				Experience
+			</a>
 			<a href="#skills" 
 				class="w3-bar-item w3-button w3-margin-top w3-center">
 				Technical Skills
 			</a>
 			<a href="#works" 
 				class="w3-bar-item w3-button w3-margin-top w3-center">
-				Projects/Works
+				Personal Projects
 			</a>
 			<!--a href="#educ" 
 				class="w3-bar-item w3-button w3-margin-top w3-center">
@@ -86,34 +93,50 @@
 				</span>	
 		</div>
 
-		<div class="w3-container" id="home">
+		<div class="w3-container" id="home" tabindex="-1">
 			<header class="w3-display-container w3-content w3-section" style="height:100vh">
 				<div class="w3-display-middle w3-margin-top">
 					<div class="w3-container w3-center">
 						<img 
 							src="img/profile.png" 
 							style="width: 200px; " 
-							alt="Herminigildo's Profile"
+							alt="Portrait of Herminigildo Jr Quiano"
 							loading="lazy" 
 							title="Herminigildo Jr Quiano" 
 							class="w3-circle"/>
 	
-						<h3>Herminigildo Jr Quaino</h3>
+						<h3>Herminigildo Jr A. Quiano</h3>
 						<div class="w3-panel">
-							BS Information Technology<br />
-							Programmer
+							PHP Developer with a QA mindset<br />
+							<span class="w3-opacity">Valenzuela City, NCR &middot; BS Information Technology</span>
 						</div>
-	
+						
 						<div class="w3-panel w3-xlarge">
-							<a href="#" ><i class="bx bxl-linkedin"></i></a>
-							<a 
-								href="https://bit.ly/3DGmVb4" 
-								target="_blank"><i class="bx bxl-github"></i></a>
-
-							<a 
+							<a
+								href="https://github.com/Lasyanga"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="GitHub profile"><i class="bx bxl-github" aria-hidden="true"></i></a>
+							<a
 								href="https://www.facebook.com/Lasyanga"
-								target="_blank">
-								<i class='bx bxl-facebook'></i></a>
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Facebook profile"><i class="bx bxl-facebook" aria-hidden="true"></i></a>
+						</div>
+
+						<div class="cta-row">
+							<a
+								href="#works"
+								class="w3-button w3-theme-l4 w3-round">
+								View my work
+							</a>
+							<a
+								href="my-cv/Herminigildo-Quiano-CV.pdf"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="w3-button w3-round w3-border">
+								Download CV
+							</a>
 						</div>
 					</div>	
 				</div>
@@ -128,190 +151,84 @@
 							About me
 						</h3>
 						<p class="w3-justify">
-							I am a Bachelor of Science in Information Technology student who is currently 
-							exploring some of the technologies mentioned below. As an aspiring developer, 
-							I developed some simple applications using these <a href="#skills">technologies</a>. 
-							Some of my work can be found in my github <a href="https://github.com/Lasyanga?tab=repositories&q=&type=source" target="_blank">repositories</a>.
-						</p>
+							I build and maintain enterprise HR, payroll, timekeeping, and employee self-service
+							systems at LSTV Inc., where I work across multi-company MySQL and MariaDB databases.
+							A large part of that job is root-cause analysis and edge-case validation on systems
+							people rely on for their paychecks, which is why testing and defect discipline are
+							the parts of the work I care most about. My
+							<a href="#skills">technical background</a> is mostly PHP, SQL, and JavaScript, and
+							<a href="https://github.com/Lasyanga?tab=repositories&amp;q=&amp;type=source" target="_blank" rel="noopener noreferrer">some of my side projects are on GitHub</a>.
+							</p>
 					</div>
 					<!-- end About section -->
 
+					<!-- Experience section -->
+					<div class="w3-container w3-padding-32" id="experience">
+						<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-wide w3-center">
+							Professional Experience
+						</h3>
+						<div class="w3-row-padding">
+							<div class="w3-col l3 m3">
+								<h4>PHP / Systems Developer</h4>
+								<p class="w3-opacity">LSTV Inc.</p>
+								<p class="w3-opacity w3-small">Sep 2022 &ndash; Present</p>
+							</div>
+							<div class="w3-col l9 m9">
+								<ul class="exp-list" role="list">
+									<li><strong>Bank crediting integration</strong> &mdash; standardized electronic disbursement workflows with automated file generation and account validation across BPI Bizlink, PNB, and MBOS.</li>
+									<li><strong>Leave sync &amp; balance engine</strong> &mdash; reconciled asynchronous HRIS and payroll balance states, with automated repair for duplicate and negative balances.</li>
+									<li><strong>Standardized payslip engine</strong> &mdash; itemized earnings and deductions, multi-cutoff pagination, piece-rate, and leave plotting, adopted platform-wide.</li>
+									<li><strong>Timekeeping (DTR)</strong> &mdash; time-clock entry, open-break and undertime computation, and DTR mass-export workflows.</li>
+									<li><strong>Authentication hardening</strong> &mdash; forced credential updates on initial access to close a default-administrator risk.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- end Experience section -->
+
 					<!-- Skills -->
 					<div class="w3-container w3-padding-32" id="skills">
+						<h3 class="w3-border-bottom w3-border-light-grey w3-padding-16 w3-wide w3-center">
+							Technical Skills
+						</h3>
 						<div class="w3-row-padding">
-							<h3 class="w3-border-bottom w3-border-light-grey w3-center w3-wide">
-								My Expertise Area
-							</h3>
 							<div class="w3-col l6 m6">
 								<div class="w3-panel">
-
-									<span class="w3-large">HTML</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:80%">
-											80%
-										</div>
-									</div>
-
-									<span class="w3-large">PHP</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:80%">
-											80%
-										</div>
-									</div>
-
-									<span class="w3-large">MySQL</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:65%">
-											65%
-										</div>
-									</div>
-
-									<span class="w3-large">Java</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:64%">
-											64%
-										</div>
-									</div>
-
-									<span class="w3-large">Bootstrap 4</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:60%">
-											60%
-										</div>
-									</div>
-
-									<span class="w3-large">Laravel</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:55%">
-											55%
-										</div>
-									</div>
-								
+									<h4>Languages</h4>
+									<p>
+										<span class="skill-tag">PHP</span>
+										<span class="skill-tag">SQL</span>
+										<span class="skill-tag">JavaScript (jQuery)</span>
+										<span class="skill-tag">HTML / CSS</span>
+										<span class="skill-tag">JSON</span>
+									</p>
+									<h4 class="w3-margin-top">Databases</h4>
+									<p>
+										<span class="skill-tag">MySQL</span>
+										<span class="skill-tag">MariaDB</span>
+									</p>
 								</div>
 							</div>
-	
 							<div class="w3-col l6 m6">
 								<div class="w3-panel">
-
-									<span class="w3-large">JQuery</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:50%">
-											50%
-										</div>
-									</div>
-
-									<span class="w3-large">CSS</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:45%">
-											45%
-										</div>
-									</div>
-
-									<span class="w3-large">React</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:40%">
-											40%
-										</div>
-									</div>
-
-									<span class="w3-large">Visual Basic / VB .Net</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:40%">
-											40%
-										</div>
-									</div>
-
-									<span class="w3-large">Tailwind CSS</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:30%">
-											30%
-										</div>
-									</div>
-									
-									<span class="w3-large">Python</span>
-									<div class="w3-theme-l2 w3-round-xxlarge w3-margin-bottom">
-										<div 
-											class="w3-container 
-												w3-yellow 
-												w3-center 
-												w3-round-xxlarge 
-												w3-small" 
-											style="width:30%">
-											30%
-										</div>
-									</div>
-								
+									<h4>Tools &amp; Libraries</h4>
+									<p>
+										<span class="skill-tag">PDO</span>
+										<span class="skill-tag">AJAX</span>
+										<span class="skill-tag">TCPDF</span>
+										<span class="skill-tag">PHPMailer</span>
+										<span class="skill-tag">Git</span>
+										<span class="skill-tag">PowerShell</span>
+									</p>
+									<h4 class="w3-margin-top">Working on</h4>
+									<p>
+										<span class="skill-tag">PHPUnit</span>
+										<span class="skill-tag">Automated testing</span>
+									</p>
 								</div>
 							</div>
 						</div>
-
-						</div>
-					</div>	
+					</div>
 					<!-- end Skills -->
 
 					<!-- Projects section -->
@@ -322,86 +239,62 @@
 								w3-padding-16 
 								w3-wide 
 								w3-center">
-							Projects/Works
+							Personal Projects
 						</h3>
 						<div class="w3-row-padding">
-							<div class="w3-col l3 m3 w3-margin-bottom">
+							<div class="w3-col l4 m4 w3-margin-bottom">
 								<div class="w3-display-container">
 									<div 
 										class="w3-display-topleft w3-padding-small" style="background-color:#004740; color: #ffffff">
-										<a href="https://github.com/Lasyanga/Digital-Clock" target="_blank" style="text-decoration: none;">
-											Digital Clock
+										<a href="https://github.com/Lasyanga/Simple-program-java" target="_blank" style="text-decoration: none;">
+											Sorting &amp; Searching Algorithms
 										</a>
 									</div>
-									<img
+									<a href="https://github.com/Lasyanga/Simple-program-java" target="_blank" rel="noopener noreferrer">
+										<img
 										loading="lazy"
-										src="img/clock.png" 
-										alt="Digital Clock" 
-										style="width: 100%; height: 200px;"> 
+										src="img/quicksort.png"
+										alt="Quick sort dialog showing the unsorted array, each swap step, and the sorted result"
+										style="width: 100%; height: 200px;">
+									</a>
 								</div>
 							</div>
 							
-							<div class="w3-col l3 m3 w3-margin-bottom">
-								<div class="w3-display-container">
-									<div 
-									class="w3-display-topleft w3-padding-small" style="background-color:#004740; color: #ffffff">
-									<a href="https://github.com/Lasyanga/Area-of-Circle-with-GUI" target="_blank" style="text-decoration: none;">
-											Solving Area of Circle
-										</a>
-									</div>
-									<img 
-										loading="lazy"
-										src="img/circleArea.png" alt="Solving Area of Circle" 
-										style="width: 100%; height: 200px;"> 
-								</div>
-							</div>
-
-							<div class="w3-col l3 m3 w3-margin-bottom">
-								<div class="w3-display-container">
-									<div 
-									class="w3-display-topleft w3-padding-small" style="background-color:#004740; color: #ffffff">
-									<a href="https://github.com/Lasyanga/Java-Calculator-with-GUI" target="_blank" style="text-decoration: none;">
-										Simple Calculator
-										</a>
-									</div>
-									<img 
-										loading="lazy"
-										src="img/calculator.png" alt="Simple Calculator" 
-										style="width: 100%; height: 200px;"> 
-								</div>
-							</div>
-
-							<div class="w3-col l3 m3 w3-margin-bottom">
+							<div class="w3-col l4 m4 w3-margin-bottom">
 								<div class="w3-display-container">
 									<div 
 										class="w3-display-topleft w3-padding-small" style="background-color:#004740; color: #ffffff">
-										<a href="https://lasyanga.github.io/sentiment-analyzer/" target="_blank" style="text-decoration:none">
+										<a href="https://lasyanga.github.io/sentiment-analyzer/" target="_blank" style="text-decoration: none;">
 											Sentiment Analyzer
 										</a>
 									</div>
-									<img
-										loading="lazy" 
-										src="img/sentiment-analyzer.png" alt="sentiment-analyzer"
-										style="width: 100%; height: 200px;"> 
+									<a href="https://lasyanga.github.io/sentiment-analyzer/" target="_blank" rel="noopener noreferrer">
+										<img
+										loading="lazy"
+										src="img/sentiment-analyzer.png"
+										alt="Sentiment analyzer web app"
+										style="width: 100%; height: 200px;">
+									</a>
 								</div>
 							</div>
 							
-
-							<div class="w3-col l3 m3 w3-margin-bottom">
+							<div class="w3-col l4 m4 w3-margin-bottom">
 								<div class="w3-display-container">
-									<div class="w3-display-topleft w3-padding-small" style="background-color:#004740; color: #ffffff">
-										<a href="https://lasyanga.github.io/Tula/" target="_blank" style="text-decoration:none">
+									<div 
+										class="w3-display-topleft w3-padding-small" style="background-color:#004740; color: #ffffff">
+										<a href="https://lasyanga.github.io/Tula/" target="_blank" style="text-decoration: none;">
 											A poetry compilation
 										</a>
 									</div>
-									<img
+									<a href="https://lasyanga.github.io/Tula/" target="_blank" rel="noopener noreferrer">
+										<img
 										loading="lazy"
-										src="img/tula.png" 
-										alt="Poetry compilation"
-										style="width: 100%; height: 200px"> 
+										src="img/tula.png"
+										alt="Poetry compilation site"
+										style="width: 100%; height: 200px;">
+									</a>
 								</div>
 							</div>
-							
 						</div>
 							<!--<div class="w3-row-padding">
 						
@@ -511,12 +404,25 @@
 							Contact Me
 						</h3>
 						<div class="w3-center w3-panel">
-							<p>Please contact me through the following social media platforms:</p>
+							<p>Email is the fastest way to reach me &mdash; I usually reply within a day or two.</p>
+							<p>
+								<a
+									href="mailto:herminigildojrquiano@gmail.com"
+									class="w3-button w3-theme-l4 w3-round">
+									herminigildojrquiano@gmail.com
+								</a>
+							</p>
 							<div class="w3-panel w3-xxlarge">
-								<!-- <a href="http://"><span class="bx bxl-linkedin"></span></a> -->
-								<!-- <a href="https://bit.ly/3DGmVb4" ><span class="bx bxl-github bx-lg"></span></a> -->
-								<a href="https://bit.ly/3mSZBzJ"><span class="bx bxl-facebook-circle"></span></a>
-								<!-- <a href="http://"><span class="bx bxl-google"></span></a> -->
+								<a
+									href="https://github.com/Lasyanga"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="GitHub profile"><i class="bx bxl-github" aria-hidden="true"></i></a>
+								<a
+									href="https://www.facebook.com/Lasyanga"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Facebook profile"><i class="bx bxl-facebook" aria-hidden="true"></i></a>
 							</div>
 						</div>
 					</div>
@@ -526,23 +432,8 @@
 		</div>		
 	</div>
 
-	<footer class="w3-container w3-padding-16 w3-center">
-		<div class="w3-panel">
-			Copyright <span id="year"></span>&nbsp;<span class="bx bxs-copyright"></span><br />
-			<span class="w3-right w3-tiny">Powered by: <a>W3 CSS</a></span>
-		</div>
-	</footer>
-
-	<script src="js/jquery-3.6.0.min.js"></script>
 	<script src="js/w3.js"></script>
 	<script src="js/custom.js"></script>
-
-	<script>
-		$(function(){
-			let date =  new Date().getFullYear();
-			$('#year').html(date);
-		});
-	</script>
       
 </body>
 </html>
