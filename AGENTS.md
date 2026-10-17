@@ -23,7 +23,7 @@ deployed artifact. Live at https://lasyanga.github.io/Lasyanga/ (GitHub Pages, r
     my-cv/            the CV, served at my-cv/Herminigildo-Quiano-CV.pdf and linked by the hero
                       "Download CV" button. The filename must stay exactly that, with no spaces —
                       re-exporting from Word with the original name silently 404s the link.
-    sitemap.xml, googlebcd536885ba7d8f7.html    static SEO / search-console files, hand-maintained
+    sitemap.xml, robots.txt, googlebcd536885ba7d8f7.html    static SEO / search-console files, hand-maintained
     vid/, img/ezgif.com-gif-maker.gif    unreferenced leftovers (image-placeholder.jpg appears only
                                           inside the commented-out project slots)
 
@@ -97,6 +97,11 @@ network access.
   `my-cv/`. Changing the role target on one without the other leaves them contradicting each other.
 - Images must stay under `img/` and be referenced relatively; absolute or `/`-rooted paths break on
   GitHub Pages project-site hosting.
+- `robots.txt` is served at `/Lasyanga/robots.txt` but **crawlers never read it**. robots.txt is
+  fetched from the origin root — `https://lasyanga.github.io/robots.txt` — not from a project
+  subpath, and that root 404s today. The file only becomes operative on a custom domain, or if a
+  `Lasyanga.github.io` user-site repo ever serves the root. Until then the path that works is
+  submitting `sitemap.xml` in Google Search Console directly.
 - `.gitignore` excludes only `.log` and `.vscode`. There is no ignore rule for build output because
   no build exists.
 - `js/jquery-3.6.0.min.js` is still in the tree but **no script tag references it.** It existed

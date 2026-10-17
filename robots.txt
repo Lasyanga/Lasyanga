@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lasyanga.github.io/Lasyanga/sitemap.xml
